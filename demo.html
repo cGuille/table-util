@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>TU demo</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/table-util.css" title="TU" media="screen" />
+    <script type="text/javascript" src="js/mootools-core-1.4.5-full-compat.js"></script>
+    <script type="text/javascript" src="js/table-util.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+</head>
+
+<body>
+    <div id="global">
+        <div class="actions">
+            <label for="pagination" style="width: auto; margin-right: 0;">Enable pagination</label>
+            <input id="pagination" type="checkbox" />
+        </div>
+        <table id="demo">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                </tr>
+                <tr>
+                    <th><input id="filter-1" placeholder="Filter…" type="text" /></th>
+                    <th><input id="filter-2" placeholder="Filter…" type="text" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Dorian</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Turk</td>
+                </tr>
+                <tr>
+                    <td>Elliot</td>
+                    <td>Reid</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Kelso</td>
+                </tr>
+                <tr>
+                    <td>Perry</td>
+                    <td>Cox</td>
+                </tr>
+                <tr>
+                    <td>Carla</td>
+                    <td>Espinosa</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="pagination-btns" class="actions" style="margin-top: 5px; text-align: center; visibility: hidden;">
+            <button id="page-back" style="vertical-align: middle;">Back</button>
+            <input id="page-goto" type="text" placeholder="Go to page…" style="width: 100px;" />
+            <button id="page-next" style="vertical-align: middle;">Next</button><br />
+            <span id="page-status"></span>
+        </div>
+    </div>
+</body>
+</html>

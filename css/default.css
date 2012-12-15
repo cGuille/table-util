@@ -1,0 +1,184 @@
+/* Page */
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 20px 50px;
+	background: #EAEAEA;
+    color: #222E44;
+    font-family: "Century Gothic", "Avant Garde", Avenir, TeXGyreAdventorRegular, Verdana, sans-serif;
+    font-size: .8em;
+    line-height: 1.25;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 .5em 0;
+}
+h1, h2 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1em;
+}
+
+/* Lists */
+ul, ol {
+    margin: .75em 0 .75em 24px;
+    padding: 0;
+}
+ul {
+    list-style: square;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Text containers */
+p {
+    margin: .75em 0;
+}
+
+li p, blockquote p {
+    margin: .5em 0;
+}
+blockquote, q {
+    font-size: 1.1em;
+    font-style: italic;
+}
+blockquote {
+    margin: .75em 0 .75em 24px;
+}
+cite {
+    font-style: italic;
+}
+pre, code {
+    font-size: 100%;
+    font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+pre {
+    width: 90%;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: .75em 0;
+    padding: 12px;
+    background: #eee;
+    color: #555;
+}
+pre strong {
+    font-weight: normal;
+    color: black;
+}
+
+
+/* Links & text styles */
+a {
+	color: #FF6533;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+	color: #FF4C00;
+}
+a img {
+    border: none;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+	color: #f18800;
+}
+
+
+/* Form items */
+fieldset {
+    margin: 5px 0 20px 0;
+    background-color: #EAEAEA;
+    border-radius: 3px;
+}
+fieldset > legend {
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+label, span.item-label {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+    vertical-align: middle;
+    text-align: right;
+}
+label {
+    cursor: pointer;
+}
+
+input[type="text"], textarea, span.item {
+    display: inline-block;
+    width: 60%;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+form > div:last-child {
+    text-align: center;
+}
+
+div.actions {
+    text-align: right;
+}
+div.actions input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+button {
+    color: #222E44;
+    font-family: "Century Gothic", "Avant Garde", Avenir, TeXGyreAdventorRegular, Verdana, sans-serif;display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #C0C0C0;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-radius: 2px;
+    margin: 0;
+    padding: 4px;
+    width: auto;
+    overflow: visible;
+}
+button:hover {
+    border: 1px solid #A0A0A0;
+    border-top: 1px solid #C0C0C0;
+    border-left: 1px solid #C0C0C0;
+    background-color: #EAEAEA;
+}
+button:active {
+    background-color: #DADADA;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border: 1px solid #BABAFA;
+}
