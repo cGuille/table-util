@@ -15,4 +15,44 @@ For now, two constructors are exposed by the TU module:
 Documentation
 =============
 
-Coming (not really) soon.
+
+```js
+// Call the TableFilter constructor like so:
+
+var filter = TableFilter(tableElt, tolerance);
+
+// Available functions
+
+filter.addEvent(type, fn);
+
+filter.getTolerance();
+
+filter.setTolerance(tolerance);
+
+filter.filter(columnIndex, str);
+
+
+// Call the TablePager constructor like so:
+
+var pager = TablePager(tableElt, itemsPerPage, page);
+
+// Available functions:
+
+pager.enable();
+
+pager.disable();
+
+pager.addEvent(type, fn);
+
+pager.getItemsPerPage();
+
+pager.setItemsPerPage(itemsPerPage);
+
+pager.back();
+
+pager.next();
+
+pager.goTo(page);
+
+pager.getCurrentPage();
+```
