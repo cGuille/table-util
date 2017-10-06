@@ -15,4 +15,25 @@ For now, two constructors are exposed by the TU module:
 Documentation
 =============
 
-Coming (not really) soon.
+TableFilter(tableElt, tolerance);
+
+TableFilter.prototype.addEvent();
+TableFilter.prototype.getTolerance();
+TableFilter.prototype.setTolerance(tolerance);
+TableFilter.prototype.filter(columnIndex, str);
+
+levenshteinDistance(str1, str2);
+
+TablePager(tableElt, itemsPerPage, page);
+
+TablePager.prototype.enable();
+TablePager.prototype.disable();
+TablePager.prototype.addEvent();
+TablePager.prototype.getItemsPerPage();
+TablePager.prototype.setItemsPerPage(itemsPerPage);
+TablePager.prototype.back();
+TablePager.prototype.next();
+TablePager.prototype.goTo(page);
+TablePager.prototype.getCurrentPage();
+
+refreshPagination()
