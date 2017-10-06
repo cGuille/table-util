@@ -19,40 +19,40 @@ Documentation
 ```js
 // Call the TableFilter constructor like so:
 
-TableFilter(tableElt, tolerance);
+var filter = TableFilter(tableElt, tolerance);
 
 // Available functions
 
-TableFilter.addEvent(type, fn);
+filter.addEvent(type, fn);
 
-TableFilter.getTolerance();
+filter.getTolerance();
 
-TableFilter.setTolerance(tolerance);
+filter.setTolerance(tolerance);
 
-TableFilter.filter(columnIndex, str);
+filter.filter(columnIndex, str);
 
 
 // Call the TablePager constructor like so:
 
-TablePager(tableElt, itemsPerPage, page);
+var pager = TablePager(tableElt, itemsPerPage, page);
 
 // Available functions:
 
-TablePager.enable();
+pager.enable();
 
-TablePager.disable();
+pager.disable();
 
-TablePager.addEvent(type, fn);
+pager.addEvent(type, fn);
 
-TablePager.getItemsPerPage();
+pager.getItemsPerPage();
 
-TablePager.setItemsPerPage(itemsPerPage);
+pager.setItemsPerPage(itemsPerPage);
 
-TablePager.back();
+pager.back();
 
-TablePager.next();
+pager.next();
 
-TablePager.goTo(page);
+pager.goTo(page);
 
-TablePager.getCurrentPage();
+pager.getCurrentPage();
 ```
