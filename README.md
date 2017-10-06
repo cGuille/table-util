@@ -15,25 +15,44 @@ For now, two constructors are exposed by the TU module:
 Documentation
 =============
 
+
+```js
+// Call the TableFilter constructor like so:
+
 TableFilter(tableElt, tolerance);
 
-TableFilter.prototype.addEvent();
-TableFilter.prototype.getTolerance();
-TableFilter.prototype.setTolerance(tolerance);
-TableFilter.prototype.filter(columnIndex, str);
+// Available functions
 
-levenshteinDistance(str1, str2);
+TableFilter.addEvent(type, fn);
+
+TableFilter.getTolerance();
+
+TableFilter.setTolerance(tolerance);
+
+TableFilter.filter(columnIndex, str);
+
+
+// Call the TablePager constructor like so:
 
 TablePager(tableElt, itemsPerPage, page);
 
-TablePager.prototype.enable();
-TablePager.prototype.disable();
-TablePager.prototype.addEvent();
-TablePager.prototype.getItemsPerPage();
-TablePager.prototype.setItemsPerPage(itemsPerPage);
-TablePager.prototype.back();
-TablePager.prototype.next();
-TablePager.prototype.goTo(page);
-TablePager.prototype.getCurrentPage();
+// Available functions:
 
-refreshPagination()
+TablePager.enable();
+
+TablePager.disable();
+
+TablePager.addEvent(type, fn);
+
+TablePager.getItemsPerPage();
+
+TablePager.setItemsPerPage(itemsPerPage);
+
+TablePager.back();
+
+TablePager.next();
+
+TablePager.goTo(page);
+
+TablePager.getCurrentPage();
+```
